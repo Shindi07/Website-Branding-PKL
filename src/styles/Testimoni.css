@@ -1,11 +1,11 @@
 /* Gaya umum untuk testimonial */
 .testimoni {
-  width: 1280px; /* Lebar tetap sesuai dengan kebutuhan */
+  width: 1280px; 
   padding: 42px 24px;
   gap: 42px;
-  opacity: 1; /* Pastikan elemen terlihat */
-  box-sizing: border-box; /* Termasuk padding dan border dalam lebar dan tinggi */
-  margin: 0 auto; /* Untuk memusatkan konten di halaman */
+  opacity: 1; 
+  box-sizing: border-box; 
+  margin: 0 auto; 
 }
 
 /* Gaya untuk bagian judul testimonial */
@@ -21,22 +21,22 @@
 /* Gaya untuk konten testimonial */
 .testimoni-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar yang sama */
+  grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: repeat(
     2,
     auto
-  ); /* 2 baris dengan tinggi otomatis sesuai konten */
-  gap: 42px; /* Jarak antar item */
+  ); 
+  gap: 42px; 
 }
 
 /* Gaya untuk setiap item testimonial */
 .testimoni-item {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Jarak antar elemen di dalam item testimonial */
+  gap: 20px; 
   padding: 20px;
-  background: #f3f3f3; /* Background tetap */
-  box-sizing: border-box; /* Termasuk padding dalam lebar dan tinggi */
+  background: #f3f3f3; 
+  box-sizing: border-box; 
 }
 
 /* Gaya untuk teks testimonial */
@@ -51,8 +51,8 @@
 /* Gaya untuk bagian footer testimonial */
 .testimoni-footer {
   display: flex;
-  align-items: center; /* Pusatkan secara vertikal */
-  gap: 16px; /* Kurangi jarak antara avatar dan keterangan */
+  align-items: center; 
+  gap: 16px; 
 }
 
 /* Gaya untuk gambar avatar */
@@ -65,13 +65,13 @@
 .testimoni-start {
   display: flex;
   align-items: center;
-  gap: 4px; /* Jarak antar bintang */
+  gap: 4px; 
 }
 /* Gaya untuk bintang (star) default */
 .testimoni-star {
   width: 20px;
   height: 20px;
-  transition: filter 0.3s ease; /* Tambahkan transisi untuk efek halus */
+  transition: filter 0.3s ease; 
 }
 
 /* Gaya untuk bintang saat di-hover */
@@ -84,8 +84,8 @@
 .testimoni-keterangan {
   display: flex;
   flex-direction: column;
-  gap: 2px; /* Kurangi jarak antara nama dan perusahaan */
-  align-items: flex-start; /* Posisikan teks di sebelah kiri */
+  gap: 2px; 
+  align-items: flex-start; 
 }
 
 /* Gaya untuk nama */
@@ -94,7 +94,7 @@
   font-size: 20px;
   font-weight: 600;
   text-align: left;
-  margin: 0; /* Hapus margin atas dan bawah */
+  margin: 0; 
 }
 
 /* Gaya untuk perusahaan */
@@ -102,5 +102,5 @@
   font-family: "Epilogue";
   font-size: 17px;
   text-align: left;
-  margin: 0; /* Hapus margin atas dan bawah */
+  margin: 0; 
 }

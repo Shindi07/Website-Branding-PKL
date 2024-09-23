@@ -1,16 +1,13 @@
-/* Kontak.css */
 
-/* Kontainer utama Kontak */
-/* Kontak.css */
 
 /* Kontainer utama Kontak */
 .Kontak-layout {
-  width: 1280px; /* Lebar layout Kontak */
-  height: 426px; /* Tinggi layout Kontak */
+  width: 1280px; 
+  height: 426px; 
   padding: 42px 24px 86px 24px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Menyelaraskan elemen di kiri */
+  align-items: flex-start; 
   gap: 20px;
 }
 
@@ -20,14 +17,13 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 42px;
-  /* margin-bottom: 16px; Kurangi margin bawah untuk mengurangi jarak dengan baris container */
 }
 
 /* Container untuk dua baris */
 .baris-container {
   display: flex;
-  justify-content: space-between; /* Mengatur jarak antar item secara merata */
-  width: 100%; /* Memastikan container menyesuaikan lebar kontainer utama */
+  justify-content: space-between; 
+  width: 100%; 
 }
 
 /* Baris pertama */
@@ -41,12 +37,12 @@
 
 /* Baris kedua */
 .baris-2 {
-  width: 520px; /* Lebar yang sama dengan baris pertama */
+  width: 520px; 
   height: 232px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  box-sizing: border-box; /* Agar padding tidak mempengaruhi lebar */
+  box-sizing: border-box; 
 }
 
 /* Styling untuk input fields */

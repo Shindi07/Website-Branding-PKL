@@ -4,7 +4,7 @@
   --layout-gap: 68px;
   --layout-opacity: 1;
 }
-
+/* LAYOUT */
 .layout {
   display: flex;
   width: var(--layout-width);
@@ -12,14 +12,16 @@
   gap: var(--layout-gap);
   justify-content: space-between;
   background-color: #ffffff;
-  align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+  align-items: center; 
   margin-top: 5rem;
 }
 
+/* TEXT SECTION */
 .text-section {
   flex: 1;
 }
 
+/* PEMBUNGKUS GAMBAR */
 .image-section {
   flex: 1;
   display: flex;
@@ -27,16 +29,19 @@
   justify-content: center;
 }
 
+/* GAMBAR PADA HEADER */
 .image-section img {
-  width: 100%; /* Pastikan gambar menyesuaikan lebar kontainer */
-  height: auto; /* Menjaga proporsi gambar */
+  width: 100%; 
+  height: auto; 
   transition: transform 0.3s ease;
 }
 
+/* GAMBAR KETIKA DI HOVER */
 .image-section img:hover {
-  transform: scale(1.05); /* Zoom in saat hover */
+  transform: scale(1.05); 
 }
 
+/* TEXT BRANDING */
 .branding {
   font-family: "Epilogue", sans-serif;
   font-size: 20px;
@@ -46,6 +51,7 @@
   margin-bottom: 10px;
 }
 
+/* TEXT VISUAL DESIGNER */
 .visual-designer {
   font-family: "Epilogue", sans-serif;
   font-size: 68px;
@@ -55,6 +61,7 @@
   margin-bottom: 20px;
 }
 
+/* DESKRIPSI PADA HEADER */
 .description {
   font-family: "Epilogue", sans-serif;
   font-size: 17px;
@@ -63,6 +70,7 @@
   text-align: left;
 }
 
+/* BUTTON UNTUK HEADER DAN CONTACT */
 .button-link {
   font-family: "Epilogue", sans-serif;
   font-size: 20px;
@@ -71,21 +79,17 @@
   text-align: center;
   margin-top: 20px;
   background-color: #2d2d2d;
-  /* Warna teks putih untuk kontras dengan latar belakang */
-  width: 211px; /* Ukuran lebar sesuai dengan kebutuhan */
-  height: 78px; /* Ukuran tinggi sesuai dengan kebutuhan */
-  padding: 24px 64px; /* Padding di sekitar teks */
+  width: 211px; 
+  height: 78px; 
+  padding: 24px 64px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 1; /* Pastikan elemen terlihat */
+  opacity: 1; 
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
 }
-
-  
-
   
 
 .button-link:hover {

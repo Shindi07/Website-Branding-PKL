@@ -6,13 +6,13 @@
 }
 
 .logo-image {
-  max-width: 100px; /* Sesuaikan dengan ukuran maksimal yang diinginkan */
-  max-height: 50px; /* Sesuaikan dengan ukuran maksimal yang diinginkan */
-  object-fit: contain; /* Memastikan gambar tetap proporsional */
-  transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+  max-width: 100px; 
+  max-height: 50px; 
+  object-fit: contain; 
+  transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .logo-image:hover {
-  filter: hue-rotate(90deg) brightness(1.2); /* Mengubah warna dan kecerahan saat hover */
-  transform: scale(1.1); /* Zoom in saat hover */
+  filter: hue-rotate(90deg) brightness(1.2); 
+  transform: scale(1.1); 
 }
