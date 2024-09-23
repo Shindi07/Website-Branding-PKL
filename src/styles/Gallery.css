@@ -15,16 +15,18 @@
   --line-height-body: 27px;
 }
 
+/* GALLERY */
 .gallery {
   background-color: #ffffff;
-  max-width: var(--max-width); /* Lebar maksimal gallery */
-  margin: 0 auto; /* Menyelaraskan gallery di tengah */
-  padding: var(--padding-y) var(--padding-x); /* Padding atas-bawah dan kanan-kiri */
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--padding-y) var(--padding-x);
   gap: var(--gap);
   display: flex;
-  flex-direction: column; /* Menyusun elemen secara vertikal */
+  flex-direction: column;
 }
 
+/* JUDUL GALLERY */
 .gallery-title {
   font-family: var(--font-family);
   font-size: var(--font-size-title);
@@ -35,40 +37,41 @@
 
 .gallery-content {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(394.67px, 1fr)
-  ); /* Kolom responsif */
-  gap: 24px; /* Jarak antar item */
+  grid-template-columns: repeat(auto-fit, minmax(394.67px, 1fr));
+  gap: 24px;
 }
 
 .gallery-item {
-  width: 394.67px; /* Lebar item */
-  height: 419px; /* Tinggi item */
+  width: 394.67px;
+  height: 419px;
   display: flex;
-  flex-direction: column; /* Susun gambar dan teks secara vertikal */
+  flex-direction: column;
 }
 
+/* GAMBAR */
 .gallery-image {
   width: 100%;
-  height: 330px; /* Tinggi gambar */
-  object-fit: cover; /* Menjaga proporsi gambar */
+  height: 330px;
+  object-fit: cover;
 }
+/* GAMBAR KETIKA DI HOVER */
 .gallery-image:hover {
   opacity: 0.5;
 }
 
+/* TEXT */
 .gallery-text {
-  padding: 10px; /* Padding di sekitar teks */
+  padding: 10px;
 }
 
+/* SUBTITTLE */
 .gallery-subtitle {
   font-family: var(--font-family);
   font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-subtitle);
   line-height: var(--line-height-subtitle);
   text-align: left;
-  margin-bottom: 8px; /* Jarak di bawah judul */
+  margin-bottom: 8px;
 }
 
 .gallery-body-text {
@@ -89,16 +92,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Pastikan modal berada di atas konten lainnya */
+  z-index: 1000;
 }
 
 /* Modal content */
 .modal-content {
   position: relative;
   background-color: #fff;
-  max-width: 500px; /* Mengatur lebar maksimal modal */
-  max-height: 500px; /* Mengatur tinggi maksimal modal */
-  overflow: hidden; /* Menghindari konten melampaui modal */
+  max-width: 500px;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 /* Modal image */
@@ -111,15 +114,14 @@
 /* Modal close button */
 .modal-close {
   position: absolute;
-  top: 10px; /* Jarak dari atas */
-  right: 10px; /* Jarak dari kanan */
+  top: 10px;
+  right: 10px;
   background-color: white;
   border: none;
   font-size: 30px;
   color: #d40000;
   cursor: pointer;
-  z-index: 1001; /* Pastikan tombol close berada di atas gambar */
+  z-index: 1001;
   padding: 0 10px;
-  /* border-radius: 15px; */
   font-weight: var(--font-weight-subtitle);
 }
