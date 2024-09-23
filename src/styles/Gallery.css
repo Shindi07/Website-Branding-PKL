@@ -1,0 +1,125 @@
+:root {
+  --max-width: 1280px;
+  --padding-y: 42px;
+  --padding-x: 24px;
+  --gap: 42px;
+  --font-family: "Epilogue", sans-serif;
+  --font-size-title: 32px;
+  --font-size-subtitle: 20px;
+  --font-size-body: 17px;
+  --font-weight-title: 600;
+  --font-weight-subtitle: 600;
+  --font-weight-body: 300;
+  --line-height-title: 42px;
+  --line-height-subtitle: 30px;
+  --line-height-body: 27px;
+}
+
+.gallery {
+  background-color: #ffffff;
+  max-width: var(--max-width); /* Lebar maksimal gallery */
+  margin: 0 auto; /* Menyelaraskan gallery di tengah */
+  padding: var(--padding-y) var(--padding-x); /* Padding atas-bawah dan kanan-kiri */
+  gap: var(--gap);
+  display: flex;
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+}
+
+.gallery-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
+  line-height: var(--line-height-title);
+  text-align: center;
+}
+
+.gallery-content {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(394.67px, 1fr)
+  ); /* Kolom responsif */
+  gap: 24px; /* Jarak antar item */
+}
+
+.gallery-item {
+  width: 394.67px; /* Lebar item */
+  height: 419px; /* Tinggi item */
+  display: flex;
+  flex-direction: column; /* Susun gambar dan teks secara vertikal */
+}
+
+.gallery-image {
+  width: 100%;
+  height: 330px; /* Tinggi gambar */
+  object-fit: cover; /* Menjaga proporsi gambar */
+}
+.gallery-image:hover {
+  opacity: 0.5;
+}
+
+.gallery-text {
+  padding: 10px; /* Padding di sekitar teks */
+}
+
+.gallery-subtitle {
+  font-family: var(--font-family);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-subtitle);
+  line-height: var(--line-height-subtitle);
+  text-align: left;
+  margin-bottom: 8px; /* Jarak di bawah judul */
+}
+
+.gallery-body-text {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+  line-height: var(--line-height-body);
+  text-align: left;
+}
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Pastikan modal berada di atas konten lainnya */
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  max-width: 500px; /* Mengatur lebar maksimal modal */
+  max-height: 500px; /* Mengatur tinggi maksimal modal */
+  overflow: hidden; /* Menghindari konten melampaui modal */
+}
+
+/* Modal image */
+.modal-image {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Modal close button */
+.modal-close {
+  position: absolute;
+  top: 10px; /* Jarak dari atas */
+  right: 10px; /* Jarak dari kanan */
+  background-color: white;
+  border: none;
+  font-size: 30px;
+  color: #d40000;
+  cursor: pointer;
+  z-index: 1001; /* Pastikan tombol close berada di atas gambar */
+  padding: 0 10px;
+  /* border-radius: 15px; */
+  font-weight: var(--font-weight-subtitle);
+}

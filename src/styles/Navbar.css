@@ -1,0 +1,76 @@
+:root {
+    --navbar-color: #ffffff; /* Warna latar belakang navbar */
+    --logo-font-family: "Epilogue", sans-serif; /* Font untuk logo */
+    --logo-font-size: 20px; /* Ukuran font untuk logo */
+    --logo-font-weight: 600; /* Bobot font untuk logo */
+    --logo-line-height: 30px; /* Tinggi baris untuk logo */
+    --menu-font-family: "Epilogue", sans-serif; /* Font untuk menu */
+    --menu-font-size: 17px; /* Ukuran font untuk menu */
+    --menu-font-weight: 400; /* Bobot font untuk menu */
+    --menu-line-height: 27px; /* Tinggi baris untuk menu */
+  }
+  
+  .navbar {
+    display: flex;
+    width: 100%; /* Memastikan lebar navbar sesuai viewport */
+    height: auto; /* Tinggi otomatis menyesuaikan dengan konten */
+    justify-content: space-between; /* Menyebar item secara merata */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    background-color: var(--navbar-color); /* Menggunakan variabel warna */
+    position: fixed !important; /* Membuat navbar tetap di posisi atas */
+    top: 0;
+    left: 0; /* Agar menyebar ke kiri layar */
+    right: 0; /* Agar menyebar ke kanan layar */
+    z-index: 999; /* Membuat navbar berada di atas elemen lain */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek pemisahan dari konten */
+  }
+  
+  /* Styling untuk brand dan menu */
+  .navbar-brand a {
+    font-family: var(--logo-font-family);
+    font-size: var(--logo-font-size);
+    font-weight: var(--logo-font-weight);
+    line-height: var(--logo-line-height);
+    text-align: left;
+    color: #181818; /* Warna teks logo */
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 42px 24px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin-left: 20px; /* Jarak antara item menu */
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: #333; /* Warna teks menu */
+    font-family: var(--menu-font-family);
+    font-size: var(--menu-font-size); /* Menggunakan variabel font-size */
+    font-weight: var(--menu-font-weight); /* Menggunakan variabel font-weight */
+    line-height: var(--menu-line-height); /* Menggunakan variabel line-height */
+    text-align: left; /* Menyelaraskan teks ke kiri */
+  }
+  
+  .navbar-menu a:hover {
+    color: #007bff; /* Warna saat hover */
+  }
+  .navbar-logo {
+    width: 40px; /* Atur ukuran logo */
+    height: 40px; /* Pastikan lebar dan tinggi sama untuk membuatnya bulat */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover; /* Agar gambar tetap proporsional di dalam area lingkaran */
+    margin-right: 10px; /* Jarak antara logo dan teks */
+    vertical-align: middle; /* Menyelaraskan logo dengan teks */
+  }
+  .navbar-menu li:last-child {
+    margin-right: 20px; /* Jarak ekstra di sebelah kanan item menu terakhir */
+  }
+  

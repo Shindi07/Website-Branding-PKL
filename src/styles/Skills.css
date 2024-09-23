@@ -1,0 +1,54 @@
+.skills {
+  background-color: #ffffff;
+  width: 1232px; /* Lebar layout sesuai kebutuhan */
+  height: auto; /* Tinggi otomatis menyesuaikan dengan konten */
+  padding: 42px 24px;
+  gap: 42px;
+  opacity: 1; /* Pastikan elemen terlihat */
+  display: flex;
+  flex-direction: column; /* Susun elemen secara vertikal */
+}
+
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    394.67px
+  ); /* Tiga kolom dengan lebar masing-masing 394.67px */
+  gap: 24px; /* Jarak antar kolom */
+}
+
+.skill-card {
+  width: 394.67px; /* Lebar kartu skill */
+  height: auto; /* Tinggi otomatis menyesuaikan dengan konten */
+  padding: 64px 42px; /* Padding di sekitar konten */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px; /* Jarak antara gambar dan teks */
+  opacity: 1; /* Pastikan elemen terlihat */
+}
+
+.skill-card p {
+  font-family: "Epilogue", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+.skill-image {
+  width: 124px; /* Ukuran gambar sesuai kebutuhan */
+  height: 124px; /* Ukuran gambar sesuai kebutuhan */
+}
+
+.skill-title {
+  font-family: "Epilogue", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+}
+.skill-title:hover{
+  color: rgb(16, 127, 231);
+}
