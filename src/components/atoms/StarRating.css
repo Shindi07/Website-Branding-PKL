@@ -1,0 +1,18 @@
+/* Gaya untuk bintang (star) */
+.testimoni-start {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  /* Gaya untuk bintang (star) default */
+  .testimoni-star {
+    width: 20px;
+    height: 20px;
+    transition: filter 0.3s ease;
+  }
+  
+  /* Gaya untuk bintang saat di-hover */
+  .testimoni-star:hover {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(84%) saturate(1000%) hue-rotate(1deg) brightness(95%) contrast(101%);
+  }

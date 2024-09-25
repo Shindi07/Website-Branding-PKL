@@ -1,16 +1,18 @@
 import React from "react";
-import SkillImage from "../../atoms/skills/SkillImage";
-import SkillTitle from "../../atoms/skills/SkillTitle";
-import SkillDescription from "../../atoms/skills/SkillDescription";
+import Image from "../../atoms/Image";
+import Subtitle from "../../atoms/Subtitle";
 
-const SkillCard = ({ src, alt, title, description }) => {
+import Text from "../../atoms/Text";
+
+const SkillCard = ({ src, alt, subtitle, description }) => {
   return (
     <div className="skill-card">
-      <SkillImage src={src} alt={alt} />
-      <SkillTitle title={title} />
-      <SkillDescription>{description}</SkillDescription>
+      <Image src={src} alt={alt} className="skill-image" />
+      <Subtitle className="subtitle" subtitle={subtitle} /> {/* Pastikan properti subtitle digunakan dengan benar */}
+      <Text className="skill-description">{description}</Text>
     </div>
   );
 };
+
 
 export default SkillCard;

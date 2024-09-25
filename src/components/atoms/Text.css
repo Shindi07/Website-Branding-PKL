@@ -1,0 +1,9 @@
+/* DESKRIPSI PADA HEADER */
+.description {
+    font-family: "Epilogue", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: black;
+  }

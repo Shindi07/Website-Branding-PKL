@@ -1,7 +1,7 @@
 import React from 'react';
 import TestimoniKeterangan from './TestimoniKeterangan';
-import Avatar from "../../atoms/testimoni/Avatar";
-import Star from "../../atoms/testimoni/StarRating";
+import Avatar from "../../atoms/Avatar";
+import Star from "../../atoms/StarRating";
 
 
 const TestimoniFooter = ({ avatarSrc, avatarAlt, nama, company }) => {

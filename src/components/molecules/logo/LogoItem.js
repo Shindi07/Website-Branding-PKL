@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../atoms/logo/Image";
+import Image from "../../atoms/Image";
 
 
 

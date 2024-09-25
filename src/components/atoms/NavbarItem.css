@@ -1,0 +1,20 @@
+/* NavbarItem.css */
+
+.navbar-item {
+    margin-left: 20px; /* Jarak antara item */
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: #333; /* Warna teks */
+    font-family: var(--menu-font-family);
+    font-size: var(--menu-font-size);
+    font-weight: var(--menu-font-weight);
+    line-height: var(--menu-line-height);
+    text-align: left;
+  }
+  
+  .navbar-item a:hover {
+    color: #007bff; /* Warna saat hover */
+  }
+  

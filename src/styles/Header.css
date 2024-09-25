@@ -48,7 +48,7 @@
   font-weight: 600;
   line-height: 30px;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 2ch;
 }
 
 /* TEXT VISUAL DESIGNER */
@@ -60,38 +60,9 @@
   text-align: left;
   margin-bottom: 20px;
 }
-
-/* DESKRIPSI PADA HEADER */
-.description {
+.description{
   font-family: "Epilogue", sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: left;
 }
 
-/* BUTTON UNTUK HEADER DAN CONTACT */
-.button-link {
-  font-family: "Epilogue", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  text-align: center;
-  margin-top: 20px;
-  background-color: #2d2d2d;
-  width: 211px; 
-  height: 78px; 
-  padding: 24px 64px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1; 
-  cursor: pointer;
-  color: #ffffff;
-  text-decoration: none;
-}
-  
 
-.button-link:hover {
-  background-color: #007bff;
-}
+

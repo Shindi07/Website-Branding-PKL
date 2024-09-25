@@ -1,49 +1,44 @@
 /* Gaya umum untuk testimonial */
 .testimoni {
-  width: 1280px; 
+  width: 1280px;
   padding: 42px 24px;
   gap: 42px;
-  opacity: 1; 
-  box-sizing: border-box; 
-  margin: 0 auto; 
+  opacity: 1;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* Gaya untuk bagian judul testimonial */
-.testimoni-title {
-  font-family: "Epilogue";
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 42px;
-  text-align: center;
-  margin-bottom: 30px;
-}
+
 
 /* Gaya untuk konten testimonial */
 .testimoni-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(
-    2,
-    auto
-  ); 
-  gap: 42px; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 42px;
+
+
 }
 
 /* Gaya untuk setiap item testimonial */
 .testimoni-item {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
   padding: 20px;
-  background: #f3f3f3; 
-  box-sizing: border-box; 
+  background: #f3f3f3;
+  box-sizing: border-box;
+  padding: 42px;
+
+
 }
 
 /* Gaya untuk teks testimonial */
-.testimoni-text p {
+.testimoni-text {
   font-family: "Epilogue";
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 27px;
   text-align: left;
 }
@@ -51,41 +46,18 @@
 /* Gaya untuk bagian footer testimonial */
 .testimoni-footer {
   display: flex;
-  align-items: center; 
-  gap: 16px; 
-}
-
-/* Gaya untuk gambar avatar */
-.testimoni-avatar {
-  width: 50px;
-  height: 50px;
-}
-
-/* Gaya untuk bintang (star) */
-.testimoni-start {
-  display: flex;
   align-items: center;
-  gap: 4px; 
-}
-/* Gaya untuk bintang (star) default */
-.testimoni-star {
-  width: 20px;
-  height: 20px;
-  transition: filter 0.3s ease; 
-}
+  gap: 16px;
+  margin-top: 20px;
 
-/* Gaya untuk bintang saat di-hover */
-.testimoni-star:hover {
-  filter: brightness(0) saturate(100%) invert(76%) sepia(84%) saturate(1000%)
-    hue-rotate(1deg) brightness(95%) contrast(101%);
 }
 
 /* Gaya untuk keterangan testimonial */
 .testimoni-keterangan {
   display: flex;
   flex-direction: column;
-  gap: 2px; 
-  align-items: flex-start; 
+  gap: 2px;
+  align-items: flex-start;
 }
 
 /* Gaya untuk nama */
@@ -94,7 +66,7 @@
   font-size: 20px;
   font-weight: 600;
   text-align: left;
-  margin: 0; 
+  margin: 0;
 }
 
 /* Gaya untuk perusahaan */
@@ -102,5 +74,5 @@
   font-family: "Epilogue";
   font-size: 17px;
   text-align: left;
-  margin: 0; 
+  margin: 0;
 }

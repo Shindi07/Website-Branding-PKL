@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../atoms/header/Button";
+import Button from "../../atoms/Button";
 
 const ContactLink = () => {
   return (

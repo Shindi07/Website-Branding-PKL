@@ -10,17 +10,12 @@
   flex-direction: column; 
 }
 
-
 /* SKILLS CONTENT */
 .skills-content {
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    394.67px
-  ); 
+  grid-template-columns: repeat(3, 394.67px); 
   gap: 24px; 
 }
-
 
 /* CARD PADA SKILL */
 .skill-card {
@@ -35,31 +30,21 @@
   opacity: 1; 
 }
 
-/* STYLE UNTUK TESK PARAGRAPH */
-.skill-card p {
+/* GAMBAR */
+.skill-image {
+  width: 124px; 
+  height: 124px; 
+  margin-bottom: 20px;
+
+}
+
+
+
+/* STYLE UNTUK DESKRIPSI (TEKS PARAGRAF) */
+.skill-description {
   font-family: "Epilogue", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 27px;
   text-align: center;
-}
-
-/* GAMBAR */
-.skill-image {
-  width: 124px; 
-  height: 124px; 
-}
-
-/* JUDUL */
-.skill-title {
-  font-family: "Epilogue", sans-serif;
-  font-size: 27px;
-  font-weight: 600;
-  line-height: 42px;
-  text-align: center;
-}
-
-/* JUDUL KETIKA DI HOVER */
-.skill-title:hover{
-  color: rgb(16, 127, 231);
 }

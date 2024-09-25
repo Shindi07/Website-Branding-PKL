@@ -5,14 +5,14 @@
   padding: 42px 68px;
 }
 
-.logo-image {
+.logo-item img {
   max-width: 100px; 
   max-height: 50px; 
   object-fit: contain; 
   transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-.logo-image:hover {
+.logo-item img:hover {
   filter: hue-rotate(90deg) brightness(1.2); 
   transform: scale(1.1); 
 }

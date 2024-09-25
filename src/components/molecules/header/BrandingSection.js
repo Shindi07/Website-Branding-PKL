@@ -1,11 +1,11 @@
 import React from "react";
-import Text from "../../atoms/header/Text";
+import Text from "../../atoms/Text";
 
 const BrandingSection = () => {
   return (
     <div className="branding-section">
       <Text className="branding">Branding | Image making</Text>
-      <Text className="visual-designer">Visual Designer</Text>
+      <h1 className="visual-designer">Visual Designer</h1>
     </div>
   );
 };

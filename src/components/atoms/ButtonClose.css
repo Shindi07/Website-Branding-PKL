@@ -1,0 +1,15 @@
+/* Modal close button */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    color: #d40000;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0 10px;
+    font-weight: var(--font-weight-subtitle);
+  }
+  /* Modal overlay */

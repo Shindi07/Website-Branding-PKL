@@ -1,12 +1,15 @@
 // src/App.js
 import React from "react";
-import Navbar from "./components/organisms/Navbar";
-import Header from "./components/organisms/Header";
-import Logo from "./components/organisms/Logo";
-import Skills from "./components/organisms/Skills";
-import Gallery from "./components/organisms/Gallery";
-import Testimoni from "./components/organisms/Testimoni";
-import Kontak from "./components/organisms/Kontak";
+import Navbar from "./components/organisms-temp/Navbar";
+import Header from "./components/organisms-temp/Header";
+import Logo from "./components/organisms-temp/Logo";
+import Skills from "./components/organisms-temp/Skills";
+import Gallery from "./components/organisms-temp/Gallery";
+import Testimoni from "./components/organisms-temp/Testimoni";
+import Kontak from "./components/organisms-temp/Kontak";
+
+
+
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
       <Gallery />
       <Testimoni />
       <Kontak />
+    
     </div>
   );
 }
