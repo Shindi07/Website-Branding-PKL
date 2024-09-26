@@ -1,4 +1,3 @@
-// src/components/molecules/Modal.js
 import React from "react";
 import ButtonClose from "../../atoms/ButtonClose";
 

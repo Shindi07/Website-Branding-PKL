@@ -1,5 +1,5 @@
 import React from 'react';
-import './StarRating.css'; // Impor file CSS
+import './StarRating.css'; 
 
 
 const Star = ({ src, alt }) => {

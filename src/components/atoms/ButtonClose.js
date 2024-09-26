@@ -1,5 +1,5 @@
 import React from "react";
-import "./ButtonClose.css"; // Hapus './' jika file berada di folder yang sama
+import "./ButtonClose.css"; 
 
 const ButtonClose = ({ onClick }) => {
   return (

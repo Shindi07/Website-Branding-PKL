@@ -125,3 +125,6 @@
   padding: 0 10px;
   font-weight: var(--font-weight-subtitle);
 }
+.gallery-item:hover {
+  opacity: 0.5; /* Mengatur opacity gambar saat di-hover */
+}

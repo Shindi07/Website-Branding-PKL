@@ -1,4 +1,3 @@
-// src/components/molecules/navbar/NavbarMenu.js
 import React from "react";
 import NavbarItem from "../../atoms/NavbarItem";
 

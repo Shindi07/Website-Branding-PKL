@@ -1,8 +1,7 @@
-// src/components/organisms/Navbar.js
 import React from "react";
-import Logo from "../atoms/Logo"; // Path ke Logo.js di atoms/navbar
-import NavbarMenu from "../molecules/Navbarr/NavbarMenu"; // Path ke NavbarMenu.js di molecules/navbar
-import "../../styles/Navbar.css"; // Path ke CSS di styles
+import Logo from "../atoms/Logo"; 
+import NavbarMenu from "../molecules/Navbarr/NavbarMenu"; 
+import "../../styles/Navbar.css"; 
 
 const Navbar = () => {
   return (

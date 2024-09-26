@@ -1,4 +1,3 @@
-// src/components/atoms/navbar/Logo.js
 import React from 'react';
 import "./Logo.css"
 

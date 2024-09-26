@@ -1,4 +1,3 @@
-// src/Components/organisms/kontak/Kontak.js
 import React from 'react';
 import Text from '../atoms/Text';
 import SocialMediaIcon from '../molecules/Kontak/SocialMediaIcon';

@@ -1,16 +1,16 @@
 /* Subtitle.css */
-
 .subtitle {
-  font-size: 24px; /* Ukuran font untuk subtitle */
-  font-weight: 600; /* Ketebalan font */
-  line-height: 30px; /* Tinggi baris untuk subtitle */
-  margin: 0; /* Menghapus margin default */
-  text-align: center; /* Memusatkan teks */
+  font-size: 24px; 
+  font-weight: 600; 
+  line-height: 30px; 
+  margin: 0; 
+  text-align: center; 
   font-family: "Epilogue", sans-serif;
   margin-top: 20px;
+  color: #2D2D2D;
 }
 
 /* Styling ketika hover */
 .subtitle:hover {
-  color: #007bff; /* Ubah warna saat hover */
+  color: #007bff; 
 }

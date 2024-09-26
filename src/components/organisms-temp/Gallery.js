@@ -21,7 +21,6 @@ const Gallery = () => {
     <section id="Gallery">
       <div className="gallery">
         <h2 className="gallery-title">Latest Work</h2>
-        {/* Menggunakan class gallery-title */}
         <div className="gallery-content">
           {[...Array(6)].map((_, index) => (
             <GalleryItem

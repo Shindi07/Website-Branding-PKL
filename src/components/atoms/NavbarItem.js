@@ -1,9 +1,9 @@
 import React from 'react';
-import './NavbarItem.css'; // Impor file CSS
+import './NavbarItem.css'; 
 
 const NavbarItem = ({ label, href }) => {
   return (
-    <li className="navbar-item"> {/* Tambahkan kelas untuk styling */}
+    <li className="navbar-item"> 
       <a href={href}>{label}</a>
     </li>
   );

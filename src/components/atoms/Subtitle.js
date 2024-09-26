@@ -1,4 +1,3 @@
-// src/components/atoms/GalleryTitle.js
 import React from "react";
 import "./Subtitle.css";
 

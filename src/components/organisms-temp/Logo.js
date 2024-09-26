@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Logo.css"; // Path ke CSS di styles
+import "../../styles/Logo.css"; 
 import LogoItem from "../molecules/Logo/LogoItem";
 
 const LogoSection = () => {
