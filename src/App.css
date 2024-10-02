@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+/* Styles untuk tombol Logout */
+.navbar-menu {
+  list-style: none; /* Menghapus bullet points dari list */
+  display: flex; /* Mengatur item menu menjadi fleksibel */
+  align-items: center; /* Vertikal center */
+  justify-content: flex-end; /* Menempatkan menu di kanan */
+  margin: 0; /* Menghapus margin */
+  padding: 0; /* Menghapus padding */
+}
+
+.navbar-menu li {
+  margin-left: 20px; /* Jarak antar item navbar */
+}
+
+.logout-button {
+  background-color: #f44336; /* Warna tombol merah */
+  color: white; /* Warna teks putih */
+  border: none; /* Menghapus border */
+  padding: 10px 15px; /* Padding pada tombol */
+  font-size: 16px; /* Ukuran font */
+  cursor: pointer; /* Kursor berubah menjadi pointer */
+  border-radius: 100px; /* Sudut tombol agak membulat */
+  transition: background-color 0.3s ease; /* Animasi saat hover */
+  border: 2px solid rgb(131, 7, 7);
+}
+
+/* Efek hover pada tombol */
+.logout-button:hover {
+  background-color: #d32f2f; /* Warna lebih gelap saat hover */
+}
+
+/* Efek saat tombol ditekan */
+.logout-button:active {
+  background-color: #b71c1c; /* Warna lebih gelap saat ditekan */
+}
+
+/* Menghapus outline default pada fokus */
+.logout-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Efek bayangan saat fokus */
+}

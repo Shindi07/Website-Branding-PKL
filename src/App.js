@@ -10,29 +10,30 @@ import Kontak from "./components/organisms-temp/Kontak";
 import Login from "./components/Pages/Login"; // Mengimpor Login
 import Register from "./components/Pages/Register"; // Mengimpor Register
 import ProtectedRoute from "./components/ProtectedRoute"; // Mengimpor ProtectedRoute
+import "./App.css"
 
 // Komponen LandingPage untuk halaman utama
 const LandingPage = () => {
   const navigate = useNavigate(); // Hook untuk navigasi
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Hapus token dari localStorage
-    navigate('/login'); // Redirect ke halaman login
+    localStorage.removeItem("token"); // Hapus token dari localStorage
+    navigate("/login"); // Redirect ke halaman login
   };
 
   return (
     <>
-      <Navbar />
+      <Navbar onLogout={handleLogout} /> {/* Mengirimkan handleLogout */}
       <Header />
       <Logo />
       <Skills />
       <Gallery />
       <Testimoni />
       <Kontak />
-      <button onClick={handleLogout}>Logout</button> {/* Tombol Logout */}
     </>
   );
 };
+
 
 // Komponen utama App
 function App() {

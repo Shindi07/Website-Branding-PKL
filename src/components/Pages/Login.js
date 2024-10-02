@@ -1,53 +1,69 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2"; // Import SweetAlert
+import "../../styles/Login.css"; // Import CSS biasa
 
 const Login = () => {
-  const [nip, setNip] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Menggunakan hook untuk navigasi
+  const [nip, setNip] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
-    e.preventDefault(); // Mencegah reload saat form di-submit
+    e.preventDefault();
     try {
-      const response = await axios.post('http://116.206.212.234:4000/auth/login', {
-        nip, // Menggunakan nip di sini
-        password,
-      });
+      const response = await axios.post(
+        "http://116.206.212.234:4000/auth/login",
+        { nip, password }
+      );
 
       if (response.data.token) {
-        // Simpan token di localStorage
-        localStorage.setItem('token', response.data.token);
-        alert('Login berhasil!');
-        navigate('/');  // Redirect ke halaman utama setelah login
+        localStorage.setItem("token", response.data.token);
+        Swal.fire({ // Ganti alert dengan SweetAlert
+          title: "Login Berhasil!",
+          text: "Selamat datang kembali!",
+          icon: "success",
+          confirmButtonText: "OK"
+        });
+        navigate("/");
       }
     } catch (error) {
-      console.error('Login gagal', error);
-      alert('Login gagal, periksa kembali data Anda.');
+      console.error("Login gagal", error);
+      Swal.fire({ // Ganti alert dengan SweetAlert
+        title: "Login Gagal",
+        text: "Periksa kembali data Anda.",
+        icon: "error",
+        confirmButtonText: "OK"
+      });
     }
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <input 
-          type="text" 
-          placeholder="NIP" 
-          value={nip} 
-          onChange={(e) => setNip(e.target.value)} 
-          required 
-        />
-        <input 
-          type="password" 
-          placeholder="Password" 
-          value={password} 
-          onChange={(e) => setPassword(e.target.value)} 
-          required 
-        />
-        <button type="submit">Login</button>
-      </form>
+    <div className="login-container">
+      <div className="login-box">
+        <h2 className="login-title">Login</h2>
+        <form className="login-form" onSubmit={handleLogin}>
+          <input
+            className="login-input"
+            type="text"
+            placeholder="NIP"
+            value={nip}
+            onChange={(e) => setNip(e.target.value)}
+            required
+          />
+          <input
+            className="login-input"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button className="login-button" type="submit">
+            Login
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

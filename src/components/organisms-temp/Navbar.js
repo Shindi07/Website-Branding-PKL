@@ -3,13 +3,14 @@ import Logo from "../atoms/Logo";
 import NavbarMenu from "../molecules/Navbarr/NavbarMenu"; 
 import "../../styles/Navbar.css"; 
 
-const Navbar = () => {
+const Navbar = ({ onLogout }) => {  // Pastikan onLogout didefinisikan di sini
   return (
     <nav className="navbar">
       <div className="navbar-brand">
         <Logo />
       </div>
-      <NavbarMenu />
+    
+      <NavbarMenu onLogout={onLogout} />
     </nav>
   );
 };
