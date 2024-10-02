@@ -12,7 +12,7 @@
   gap: var(--layout-gap);
   justify-content: space-between;
   background-color: #ffffff;
-  align-items: center; 
+  align-items: center;
   margin-top: 5rem;
 }
 
@@ -31,14 +31,14 @@
 
 /* GAMBAR PADA HEADER */
 .image-section img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   transition: transform 0.3s ease;
 }
 
 /* GAMBAR KETIKA DI HOVER */
 .image-section img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 /* TEXT BRANDING */
@@ -60,9 +60,6 @@
   text-align: left;
   margin-bottom: 20px;
 }
-.description{
+.description {
   font-family: "Epilogue", sans-serif;
 }
-
-
-

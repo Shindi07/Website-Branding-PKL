@@ -1,24 +1,23 @@
 .button-link {
-    font-family: "Epilogue", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    margin-top: 20px;
-    background-color: #2d2d2d;
-    width: 211px; 
-    height: 78px; 
-    padding: 24px 64px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1; 
-    cursor: pointer;
-    color: #ffffff;
-    text-decoration: none;
-  }
-    
-  
-  .button-link:hover {
-    background-color: #007bff;
-  }
+  font-family: "Epilogue", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #2d2d2d;
+  width: 211px;
+  height: 78px;
+  padding: 24px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background-color: #007bff;
+}

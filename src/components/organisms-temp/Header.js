@@ -1,7 +1,6 @@
 import React from "react";
 import BrandingSection from "../molecules/Header/BrandingSection";
 import ContactLink from "../molecules/Header/ContactLink";
-
 import Image from "../atoms/Image";
 import Text from "../atoms/Text";
 import "../../styles/Header.css";
