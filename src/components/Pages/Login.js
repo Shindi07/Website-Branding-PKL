@@ -1,40 +1,30 @@
 import React, { useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2"; // Import SweetAlert
-import "../../styles/Login.css"; // Import CSS biasa
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+import "../../styles/Login.css";
 
 const Login = () => {
-  const [nip, setNip] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post(
-        "http://116.206.212.234:4000/auth/login",
-        { nip, password }
-      );
 
-      if (response.data.token) {
-        localStorage.setItem("token", response.data.token);
-        Swal.fire({ // Ganti alert dengan SweetAlert
-          title: "Login Berhasil!",
-          text: "Selamat datang kembali!",
-          icon: "success",
-          confirmButtonText: "OK"
-        });
-        navigate("/");
-      }
-    } catch (error) {
-      console.error("Login gagal", error);
-      Swal.fire({ // Ganti alert dengan SweetAlert
-        title: "Login Gagal",
-        text: "Periksa kembali data Anda.",
-        icon: "error",
-        confirmButtonText: "OK"
-      });
+    // Ganti logika autentikasi dengan yang sesungguhnya
+    // Misalkan menggunakan username "user" dan password "password" sebagai contoh
+    const validCredentials = {
+      nip: "197210182000031006",
+      password: "123456",
+    };
+
+    if (username === validCredentials.nip && password === validCredentials.password) {
+      // Jika login berhasil, simpan token di localStorage
+      localStorage.setItem("token", "user-token"); // Token yang sebenarnya bisa berbeda
+
+      // Redirect ke halaman utama (portofolio)
+      navigate("/");
+    } else {
+      alert("Username atau password salah");
     }
   };
 
@@ -46,9 +36,9 @@ const Login = () => {
           <input
             className="login-input"
             type="text"
-            placeholder="NIP"
-            value={nip}
-            onChange={(e) => setNip(e.target.value)}
+            placeholder="Username (NIP)"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             required
           />
           <input

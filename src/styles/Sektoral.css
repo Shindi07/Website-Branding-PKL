@@ -1,0 +1,131 @@
+/* Styling untuk container utama */
+.sektoral-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Epilogue", sans-serif;
+  margin-top: 3rem;
+}
+
+/* Styling untuk kotak form pencarian */
+.sektoral-box {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 3rem
+}
+
+/* .sektoral-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+} */
+
+/* Styling untuk judul form */
+.sektoral-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0a65b9;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+/* Styling untuk form pencarian */
+.sektoral-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Membiarkan elemen berpindah baris jika layar kecil */
+}
+
+/* Styling untuk input form */
+.sektoral-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #1a98eb;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  min-width: 200px;
+  transition: border-color 0.3s ease;
+  /* margin-bottom: 2rem; */
+}
+
+.sektoral-input:focus {
+  border-color: #1cc54e;
+  outline: none;
+}
+
+/* Styling untuk tombol pencarian */
+.sektoral-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sektoral-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.sektoral-button:active {
+  background-color: #004494;
+  transform: translateY(1px);
+}
+
+/* Styling untuk tabel hasil pencarian */
+.result-table {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.result-table h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #0a65b9;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Styling untuk tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+td {
+  color: #555;
+}
+
+td[colspan="6"] {
+  text-align: center;
+}

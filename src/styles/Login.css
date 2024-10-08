@@ -1,62 +1,97 @@
-/* Styles khusus untuk halaman login */
+/* Styling untuk background container utama */
 .login-container {
-  font-family: "epilogue", sans-serif;
-
-  background-color: #ace5f7; /* Warna latar belakang */
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Tinggi layar penuh */
-}
-
-.login-box {
-  width: 100%;
-  max-width: 400px; /* Batas lebar maksimum */
-  padding: 20px;
-  background-color: white; /* Warna latar belakang form */
-  border-radius: 8px; /* Membulatkan sudut */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
-  text-align: center; /* Rata tengah teks dan form */
-}
-
-.login-title {
-  margin-bottom: 20px; /* Memberikan jarak antara judul dan form */
-  color: #333;
-  font-size: 24px; /* Ukuran font judul */
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column; /* Menyusun elemen secara vertikal */
-}
-
-.login-input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-}
-
-.login-input:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-.login-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px; /* Jarak antara input terakhir dan tombol */
-}
-
-.login-button:hover {
-  background-color: #0056b3;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    background: linear-gradient(135deg, #6cc5d1 0%, #d4d7db 100%);
+    font-family: 'Epilogue', sans-serif;
+  }
+  
+  /* Styling untuk kotak login */
+  .login-box {
+    background-color: rgba(168, 168, 168, 0.1); /* Transparan putih */
+    backdrop-filter: blur(10px); /* Efek blur pada background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2); /* Efek shadow */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Styling untuk judul login */
+  .login-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-wrap: bold;
+  }
+  
+  /* Styling untuk form login */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Styling untuk input form */
+  .login-input {
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(99, 115, 119, 0.2);
+    color: #000000;
+    outline: none;
+    box-shadow: 0 6px 4px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Efek saat input fokus */
+  .login-input:focus {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  
+  /* Styling untuk tombol login */
+  .login-button {
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #550dff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Efek hover pada tombol */
+  .login-button:hover {
+    background-color: #b8b8b8;
+    color: black;
+    transform: translateY(-3px); /* Tombol naik sedikit saat dihover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Styling untuk animasi fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Menambahkan animasi fade-in ke login-box */
+  .login-box {
+    animation: fadeIn 1s ease-in-out;
+  }
+  

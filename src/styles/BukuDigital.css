@@ -1,0 +1,69 @@
+
+
+.buku-digital-title {
+  text-align: center;
+  color: rgb(0, 0, 133);
+  margin-bottom: 30px;
+}
+.buku-digital-container {
+  padding: 20px;
+  font-family: "epilogue", sans-serif;
+  margin-top: 2rem;
+
+}
+
+.buku-digital-box {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 5rem;
+  
+}
+
+.buku-digital-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.result-table {
+  width: 100%;
+  overflow-x: auto; /* Memastikan tabel dapat digulir pada perangkat kecil */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Menghilangkan spasi antara border sel */
+}
+
+th,
+td {
+  padding: 12px 15px; /* Ruang dalam sel */
+  text-align: left; /* Rata kiri untuk teks */
+  border: 1px solid #dddddd; /* Garis batas pada setiap sel */
+}
+
+th {
+  background-color: rgb(0, 0, 133); /* Warna latar belakang untuk header */
+  color: white; /* Warna teks untuk header */
+  font-weight: bold; /* Teks tebal untuk header */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Efek hover pada baris tabel */
+}
+
+.detail-button {
+  background-color: #4caf50; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Menghilangkan border default */
+  padding: 10px 15px; /* Ruang dalam tombol */
+  border-radius: 5px; /* Sudut melengkung untuk tombol */
+  cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+  transition: background-color 0.3s; /* Efek transisi untuk hover */
+}
+
+.detail-button:hover {
+  background-color: #45a049; /* Warna latar belakang tombol saat hover */
+}

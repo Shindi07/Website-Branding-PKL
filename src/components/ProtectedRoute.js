@@ -1,16 +1,14 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
+import React from "react"; // Mengimpor React
+import { Navigate } from "react-router-dom"; // Mengimpor Navigate dari react-router-dom
 
-const ProtectedRoute = ({ children }) => {
-  const token = localStorage.getItem('token');
+const ProtectedRoute = ({ children }) => { // Mendeklarasikan komponen ProtectedRoute dengan props children
+  const isAuthenticated = !!localStorage.getItem("token"); // Memeriksa apakah token ada di localStorage
 
-  // Jika tidak ada token, redirect ke halaman login
-  if (!token) {
-    return <Navigate to="/login" />;
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />; // Mengalihkan ke halaman login jika tidak terautentikasi
   }
 
-  // Jika ada token, izinkan akses ke halaman yang dilindungi
-  return children;
+  return children; // Menampilkan children jika terautentikasi
 };
 
-export default ProtectedRoute;
+export default ProtectedRoute; // Mengekspor komponen ProtectedRoute
