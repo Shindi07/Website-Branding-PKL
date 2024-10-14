@@ -1,39 +1,32 @@
-// src/App.js
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/Pages/Layout"; // Import layout yang baru dibuat
-import Login from "./components/Pages/Login";
+import Layout from "./components/Pages/Layout";
+import Login from "./components/auth/Login";
 import Sektoral from "./components/Pages/Sektoral";
-import Register from "./components/Pages/Register";
+import Register from "./components/auth/Register";
 import BukuDigital from "./components/Pages/BukuDigital";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/auth/ProtectedRoute";
+import HalamanError from "./components/Pages/HalamanError"; // Import komponen NotFound
 import "./App.css";
 
 function App() {
-  const handleLogout = () => {
-    localStorage.removeItem("token"); // Menghapus token saat logout
-    window.location.href = "/login"; // Redirect ke login setelah logout
-  };
-
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Layout />} />
         <Route path="/sektoral" element={<Sektoral />} />
         <Route path="/register" element={<Register />} />
         <Route path="/bukudigital" element={<BukuDigital />} />
-        <Route path="/bukudigital" element={<BukuDigital />} />
+        <Route path="/login" element={<Login />} /> {/* Route untuk login */}
         <Route
           path="/"
           element={
             <ProtectedRoute>
-              <Layout onLogout={handleLogout}>
-                {/* Halaman konten utama ditampilkan di sini */}
-              </Layout>
+              <Layout />
             </ProtectedRoute>
           }
         />
+        <Route path="*" element={<HalamanError />} /> {/* Route untuk 404 */}
       </Routes>
     </Router>
   );

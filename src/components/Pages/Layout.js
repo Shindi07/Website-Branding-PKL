@@ -8,6 +8,7 @@ import Skills from "../organisms-temp/Skills";
 import Gallery from "../organisms-temp/Gallery";
 import Testimoni from "../organisms-temp/Testimoni";
 import Kontak from "../organisms-temp/Kontak";
+import Footer from "../organisms-temp/Footer";
 
 const Layout = ({ children, onLogout }) => {
   return (
@@ -19,6 +20,8 @@ const Layout = ({ children, onLogout }) => {
       <Gallery />
       <Testimoni />
       <Kontak />
+      <Footer />
+
       <div>{children}</div> {/* Menampilkan konten dinamis (anak komponen) */}
     </>
   );

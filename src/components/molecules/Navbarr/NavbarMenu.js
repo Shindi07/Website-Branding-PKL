@@ -1,26 +1,26 @@
-// src/components/organisms-temp/NavbarMenu.js
+import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
+import NavbarItem from "../../atoms/NavbarItem";
 
-import React from "react";
-import { Link } from "react-router-dom"; // Import Link dari react-router-dom
+const NavbarMenu = () => {
+  const [loggedOut, setLoggedOut] = useState(false);
 
-const NavbarMenu = ({ onLogout }) => {
+  const handleLogout = () => {
+    localStorage.removeItem("token"); // Hapus token autentikasi
+    setLoggedOut(true); // Set state untuk redirect setelah logout
+  };
+
+  if (loggedOut) {
+    return <Navigate to="/login" replace />; // Redirect ke halaman login setelah logout
+  }
+
   return (
     <ul className="navbar-menu">
-      {/* Gunakan Link untuk mengarahkan ke halaman berbeda */}
+      <NavbarItem label="Home" href="/home" />
+      <NavbarItem label="Sektoral" href="/sektoral" />
+      <NavbarItem label="Buku Digital" href="/bukudigital" />
       <li>
-        <Link to="/" className="navbar-item">Home</Link>
-      </li>
-      <li>
-        <Link to="/sektoral" className="navbar-item">Sektoral</Link>
-      </li>
-      <li>
-        <Link to="/bukudigital" className="navbar-item">Buku Digital</Link>
-      </li>
-      <li>
-      </li>
-      {/* Tambahkan tombol Logout */}
-      <li>
-        <button className="logout-button" onClick={onLogout}>
+        <button className="logout-button" onClick={handleLogout}>
           Logout
         </button>
       </li>

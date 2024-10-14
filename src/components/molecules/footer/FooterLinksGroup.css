@@ -1,0 +1,6 @@
+/* src/components/molecules/FooterLinksGroup.css */
+.footer-links-group {
+    display: flex;
+    flex-direction: row;
+  }
+  

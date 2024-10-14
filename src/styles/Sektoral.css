@@ -129,3 +129,50 @@ td {
 td[colspan="6"] {
   text-align: center;
 }
+.sektoral-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sektoral-box {
+  flex: 1;
+  margin-bottom: 20px; /* Tambahkan jarak antara konten dan footer */
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button.active {
+  background-color: #28a745;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination button:focus {
+  outline: none;
+}

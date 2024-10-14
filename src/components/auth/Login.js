@@ -10,19 +10,14 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Ganti logika autentikasi dengan yang sesungguhnya
-    // Misalkan menggunakan username "user" dan password "password" sebagai contoh
     const validCredentials = {
       nip: "197210182000031006",
       password: "123456",
     };
 
     if (username === validCredentials.nip && password === validCredentials.password) {
-      // Jika login berhasil, simpan token di localStorage
-      localStorage.setItem("token", "user-token"); // Token yang sebenarnya bisa berbeda
-
-      // Redirect ke halaman utama (portofolio)
-      navigate("/");
+      localStorage.setItem("token", "user-token");
+      navigate("/home");
     } else {
       alert("Username atau password salah");
     }

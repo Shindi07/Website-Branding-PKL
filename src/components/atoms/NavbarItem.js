@@ -1,10 +1,15 @@
+// src/components/atoms/NavbarItem.js
+
 import React from 'react';
-import './NavbarItem.css'; 
+import { NavLink } from 'react-router-dom';
+import './NavbarItem.css'; // Pastikan Anda  memiliki CSS ini
 
 const NavbarItem = ({ label, href }) => {
   return (
-    <li className="navbar-item"> 
-      <a href={href}>{label}</a>
+    <li className="navbar-item">
+      <NavLink to={href} className="navbar-link" activeClassName="active">
+        {label}
+      </NavLink>
     </li>
   );
 };

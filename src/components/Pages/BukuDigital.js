@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../../styles/BukuDigital.css";
 import Navbar from "../organisms-temp/Navbar";
+import Footer from "../organisms-temp/Footer";
 
 const BukuDigital = () => {
   const [bukuDigital, setBukuDigital] = useState([]);
@@ -39,6 +40,7 @@ const BukuDigital = () => {
   };
 
   return (
+    <>
     <div className="buku-digital-container">
       <Navbar />
       <div className="buku-digital-box">
@@ -84,6 +86,8 @@ const BukuDigital = () => {
         )}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

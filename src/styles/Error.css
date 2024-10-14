@@ -1,0 +1,45 @@
+
+  .text-error{
+    color: rgb(26, 23, 23);
+    font-size: 1.5rem;
+    font-family: "epilogue", sans-serif;
+  }
+
+  /* Animasi naik-turun */
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Naik sedikit */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .img-error {
+    max-width: 300px; /* Sesuaikan ukuran maksimum gambar */
+    height: auto; /* Sesuaikan tinggi gambar secara proporsional */
+    animation: moveUpDown 3s ease-in-out infinite; /* Terapkan animasi naik-turun */
+    margin-bottom: 20px; /* Beri jarak bawah agar tidak terlalu dekat dengan teks */
+  }
+  
+  /* Tombol kembali */
+  .btn-error {
+    background-color: #007bff; /* Warna biru */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: "epilogue", sans-serif;
+    font-weight: bold;
+  }
+  
+  .btn-error:hover {
+    background-color: #0056b3; /* Warna saat dihover */
+  }
+  

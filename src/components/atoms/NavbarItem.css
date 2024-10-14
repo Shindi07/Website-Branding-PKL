@@ -1,4 +1,4 @@
-/* NavbarItem.css */
+
 .navbar-item {
     margin-left: 20px; 
   }
@@ -17,3 +17,16 @@
     color: #007bff; 
   }
   
+
+.navbar-link {
+  color: #000; 
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: #007bff; 
+}
+
+.navbar-link.active {
+  color: #007bff; 
+}
