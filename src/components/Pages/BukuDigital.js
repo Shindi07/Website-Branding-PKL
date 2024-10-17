@@ -85,6 +85,8 @@ const BukuDigital = () => {
           </div>
         )}
       </div>
+    
+   
     </div>
     <Footer />
     </>
