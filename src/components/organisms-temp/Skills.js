@@ -1,5 +1,5 @@
 import React from "react";
-import SkillCard from "../molecules/Skills/SkillCard";
+import SkillCard from "../molecules/skills/SkillCard";
 import "../../styles/Skills.css";
 
 const Skills = () => {
