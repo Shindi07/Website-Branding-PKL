@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../molecules/Galleryy/Modal";
-import GalleryItem from "../molecules/galleryy/GalleryItem";
+import GalleryItem from "../molecules/Galleryy/GalleryItem";
 import "../../styles/Gallery.css";
 
 const Gallery = () => {

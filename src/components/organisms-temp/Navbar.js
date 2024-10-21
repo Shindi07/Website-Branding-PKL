@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../atoms/Logo"; 
-import NavbarMenu from "../molecules/navbarr/NavbarMenu"; 
+import NavbarMenu from "../molecules/Navbarr/NavbarMenu"; 
 import "../../styles/Navbar.css"; 
 
 const Navbar = ({ onLogout }) => {  // Pastikan onLogout didefinisikan di sini
