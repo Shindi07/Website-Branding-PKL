@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../atoms/Text';
-import SocialMediaIcon from '../molecules/Kontak/SocialMediaIcon';
+import SocialMediaIcon from '../molecules/kontak/SocialMediaIcon';
 import ContactForm from '../molecules/kontak/ContactForm';
 import '../../styles/Kontak.css';
 import '../../styles/Header.css';
