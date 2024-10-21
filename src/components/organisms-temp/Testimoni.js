@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../atoms/Title";
 import Text from "../atoms/Text";
-import TestimoniFooter from "../molecules/Testimoni/TestimoniFooter";
+import TestimoniFooter from "../molecules/testimoni/TestimoniFooter";
 import "../../styles/Testimoni.css";
 
 const TestimoniOrganism = () => {
