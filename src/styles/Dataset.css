@@ -1,0 +1,102 @@
+.dataset-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 4rem;
+    font-family: "epilogue";
+}
+
+.dataset-cards-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 900px;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dataset-card {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dataset-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dataset-title {
+    font-size: 1.5rem;
+    color: #0a65b9;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.dataset-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.dataset-info {
+    font-size: 0.9rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.dataset-info p {
+    margin: 5px 0;
+}
+
+.dataset-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.organisasi, .last-modified {
+    display: flex;
+    align-items: center;
+}
+
+.icon-gedung, .icon-calendar {
+    margin-right: 8px;
+    color: #555;
+}
+
+.dataset-image {
+    flex-shrink: 0;
+}
+
+.dataset-img {
+    width: 100px;
+    height: auto;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.title-dataset {
+    margin-top: 1rem;
+    color: #fcbf63;
+    font-weight: bold;
+}
+
+.deskripsi-dataset {
+    width: 900px;
+}

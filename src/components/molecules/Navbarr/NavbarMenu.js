@@ -19,6 +19,7 @@ const NavbarMenu = () => {
       <NavbarItem label="Home" href="/home" />
       <NavbarItem label="Sektoral" href="/sektoral" />
       <NavbarItem label="Buku Digital" href="/bukudigital" />
+      <NavbarItem label="Dataset" href="/dataset" />
       <li>
         <button className="logout-button" onClick={handleLogout}>
           Logout
