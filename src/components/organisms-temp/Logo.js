@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Logo.css"; 
-import LogoItem from "../molecules/Logo/LogoItem";
+import LogoItem from "../molecules/logo/LogoItem";
 
 const LogoSection = () => {
   return (
