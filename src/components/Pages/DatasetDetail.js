@@ -29,6 +29,7 @@ const DatasetDetail = () => {
 
   return (
     <div className="dataset-detail-container">
+      
       <h2>{dataset.uraian_dssd}</h2>
       <p>{dataset.description}</p>
       <div className="dataset-info">

@@ -21,6 +21,7 @@ const Layout = ({ children, onLogout }) => {
       <Testimoni />
       <Kontak />
       <Footer />
+     
 
       <div>{children}</div> {/* Menampilkan konten dinamis (anak komponen) */}
     </>
