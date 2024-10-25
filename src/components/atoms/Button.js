@@ -1,9 +1,9 @@
 import React from "react";
-import "./Button.css"
+import "./Button.css";
 
-const Button = ({ href, children }) => {
+const Button = ({ href, children, className }) => {
   return (
-    <a href={href} className="button-link">
+    <a href={href} className={`button-link ${className}`}>
       {children}
     </a>
   );

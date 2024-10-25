@@ -8,8 +8,10 @@ import "../../styles/Beranda.css";
 const Beranda = () => {
   return (
     <>
+      {/* KONTAINER UMUM */}
       <div className="beranda-container">
         <Navbar />
+        {/* STAR CONTAINER BAGIAN HEADER  */}
         <div className="beranda-header">
           <div className="text-section-beranda">
             <Text className="portal">Portal Satu Data Lampung Timur</Text>
@@ -47,7 +49,9 @@ const Beranda = () => {
             <Image src="/img/beranda-img.png" className="img-header-beranda" />
           </div>
         </div>
+        {/* END CONTAINER BAGIAN HEADER */}
 
+        {/* START CARD BAGIAN 1 */}
         <div className="card-beranda">
           <div className="card1">
             <Image src="/img/sarana.png" className="card-img-top" alt="..." />
@@ -82,37 +86,13 @@ const Beranda = () => {
             </div>
           </div>
         </div>
+        {/* END CARD BAGIAN 1 */}
 
+        {/* START CARD BAGIAN 2 (EKSAMPLER) */}
         <div className="card-eksemplar">
           <div className="card2">
             <div className="icon">
               <Image src="/img/ikon-card2.png" alt="Icon" />{" "}
-              {/* Ganti dengan path gambar */}
-            </div>
-            <div className="card3">
-              <h2 className="eksemplar-number">
-                1157709 <span className="eksemplar">Eksemplar</span>
-              </h2>
-
-              <h5 className="eksemplar-description">
-                Bahan perpustakaan tercetak di wilayah kab/kota
-              </h5>
-              <div className="button-group">
-                <a href="#" className="btn btn-data">
-                  Data Teknis
-                </a>
-                <a href="#" className="btn btn-teknis">
-                  Sosial & Kesejahteraan Masyarakat
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* eksemplar 2 */}
-          <div className="card2">
-            <div className="icon">
-              <Image src="/img/ikon-card2.png" alt="Icon" />{" "}
-              {/* Ganti dengan path gambar */}
             </div>
             <div className="card-content">
               <h2 className="eksemplar-number">
@@ -135,7 +115,28 @@ const Beranda = () => {
           <div className="card2">
             <div className="icon">
               <Image src="/img/ikon-card2.png" alt="Icon" />{" "}
-              {/* Ganti dengan path gambar */}
+            </div>
+            <div className="card-content">
+              <h2 className="eksemplar-number">
+                1157709 <span className="eksemplar">Eksemplar</span>
+              </h2>
+
+              <h5 className="eksemplar-description">
+                koleksi perpustakaan yang ada di wilayah kab/kota
+              </h5>
+              <div className="button-group">
+                <a href="#" className="btn btn-data">
+                  Data Teknis
+                </a>
+                <a href="#" className="btn btn-teknis">
+                  Sosial & Kesejahteraan Masyarakat
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="card2">
+            <div className="icon">
+              <Image src="/img/ikon-card2.png" alt="Icon" />{" "}
             </div>
             <div className="card-content">
               <h2 className="eksemplar-number">
@@ -158,7 +159,6 @@ const Beranda = () => {
           <div className="card2">
             <div className="icon">
               <Image src="/img/ikon-card2.png" alt="Icon" />{" "}
-              {/* Ganti dengan path gambar */}
             </div>
             <div className="card-content">
               <h2 className="eksemplar-number">
@@ -179,7 +179,6 @@ const Beranda = () => {
           <div className="card2">
             <div className="icon">
               <Image src="/img/ikon-card2.png" alt="Icon" />{" "}
-              {/* Ganti dengan path gambar */}
             </div>
             <div className="card-content">
               <h2 className="eksemplar-number">
@@ -202,7 +201,6 @@ const Beranda = () => {
           <div className="card2">
             <div className="icon">
               <Image src="/img/ikon-card2.png" alt="Icon" />{" "}
-              {/* Ganti dengan path gambar */}
             </div>
             <div className="card-content">
               <h2 className="eksemplar-number">
@@ -223,7 +221,9 @@ const Beranda = () => {
             </div>
           </div>
         </div>
+        {/* END CARD BAGIAN 2 (EKSAMPLER) */}
 
+        {/* START BAGIAN MENGAPA MENGGUNAKAN SATU DATA*/}
         <div className="solution-header">
           <div className="text-solution">
             <Text className="satu-data">Satu Data</Text>
@@ -252,33 +252,35 @@ const Beranda = () => {
             <Image src="/img/solution.png" className="img-solution" />
           </div>
         </div>
+        {/* END BAGIAN MENGAPA MENGGUNAKAN SATU DATA*/}
 
-        {/* Content */}
-        {/* <div class="container-content">
+        {/*START BAGIAN CARD 3 (KONTEN) */}
+        <div class="container-card3">
           <div class="card3">
-            <div class="icon">📊</div>
+            <div class="icon-card3">📊</div>
             <h3>Menemukan Data Dengan Mudah</h3>
             <p>
               Cari data dari Pemerintah Lampung timur dalam beberapa klik saja.
             </p>
           </div>
           <div class="card3">
-            <div class="icon">⚡</div>
+            <div class="icon-card3">⚡</div>
             <h3>Mendapatkan Data Dengan Cepat</h3>
             <p>Nikmati proses akses data tanpa proses birokrasi panjang.</p>
           </div>
           <div class="card3">
-            <div class="icon">✅</div>
+            <div class="icon-card3">✅</div>
             <h3>Data Akurat dan Muatkhir</h3>
             <p>
               Dapatkan data lengkap dan terkini resmi dari Organisasi Perangkat
               Daerah terkait.
             </p>
           </div>
-        </div> */}
+        </div>
+        {/*END BAGIAN CARD 3 (KONTEN) */}
 
         {/* <Footer /> */}
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
