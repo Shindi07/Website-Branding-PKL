@@ -9,6 +9,7 @@ import Dataset from "./components/Pages/Dataset";
 import DatasetDetail from "./components/Pages/DatasetDetail";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import HalamanError from "./components/Pages/HalamanError"; // Import komponen NotFound
+import Beranda from "./components/Pages/Beranda"; // Import komponen NotFound
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/home" element={<Layout />} />
+        <Route path="/beranda" element={<Beranda />} />
         <Route path="/sektoral" element={<Sektoral />} />
         <Route path="/register" element={<Register />} />
         <Route path="/bukudigital" element={<BukuDigital />} />
